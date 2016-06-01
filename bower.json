@@ -1,0 +1,21 @@
+{
+  "name": "foursquare_api",
+  "description": "an app to access local venues and their details",
+  "main": "",
+  "keywords": [
+    "API"
+  ],
+  "authors": [
+    "vegim qehaja"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
