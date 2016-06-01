@@ -4,11 +4,32 @@
   "description": "an app to access information about local venues",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/karma/bin/karma start test/karma.conf.js"
   },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gimi-q/foursquare_api_angular_TDD"
+  },
+
+
   "keywords": [
     "API"
   ],
   "author": "vegim qehaja",
-  "license": "ISC"
+  "license": "MIT",
+  "homepage": "https://github.com/gimi-q/foursquare_api_angular_TDD",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-html-reporter": "^0.2.7",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "karma-unicorn-reporter": "^0.1.4",
+    "phantomjs": "^1.9.19"
+  },
+  "dependencies": {
+    "http-server": "^0.8.5"
+  }
 }
