@@ -1,4 +1,4 @@
-### Foursqaure Venue Search App
+### Foursquare Venue Search App
 
  This little app allows you to enter your GPS co-ordinates and find local venues of interest along with some general information about them - their photos(if any), tips/reviews, and whether or not they are currently open(if applicable).
 
