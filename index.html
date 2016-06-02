@@ -12,8 +12,28 @@
   </head>
   <body>
     <h1> Foursquare Venue Search </h1>
-    <div id="helloWorld" ng-controller="FoursquareSearchController as controller">
-      {{ controller.helloWorld }}
+    <div  ng-controller="FoursquareSearchController as searchCtrl">
+
+      <form class="form-horizontal" name="searchBar">
+      <input  class="form-control" width="300"
+              type="text"
+              ng-model="searchCtrl.searchTerm"
+              ng-model-options="{ updateOn: 'default blur',
+                                  debounce: {'default': 500,
+                                              'blur': 0} }"
+              required>
+      <button class="btn" ng-click="searchCtrl.doSearch();">Search</button>
+
+      <ul class="list-group">
+        <li class="list-group-item"
+          ng-repeat="venue in searchCtrl.searchResult">
+          <img ng-src="{{venue.image}}">
+          <a class="venueName" ng-href="{{venue}}">{{venue.name}}</a><br>
+          <a class= "venueReview" ng-href="{{venue}}">{{venue.review}}</a><br>
+          <a class= "venueHours" ng-href="{{venue}}">{{venue.hours}}</a>
+        </li>
+      </ul>
+    </form>
     </div>
   </body>
 </html>
