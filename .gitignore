@@ -2,3 +2,4 @@
 bower_components
 node_modules
 karma_html
+*.log
