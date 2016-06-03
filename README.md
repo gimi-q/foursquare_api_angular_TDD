@@ -8,4 +8,13 @@
 
   1. fork the repo.
   2. clone it down to your machine.
-  3. run $npm install
+  3. run ```$npm install```
+
+N.B this app uses dotenv package to keep credentials safe.
+once you have cloned the repo be sure to add you auth_token/access_token in a file called .env (place this file in the root folder).
+
+inside ./.env    
+```ACCESS_TOKEN = YOUR_ACCESS_TOKEN_HERE```
+
+once you have done this the .dotenv npm package will handle the rest.
+(be sure to keep you credentials safe by placing this .env in your .gitignore file)

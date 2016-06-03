@@ -23,7 +23,7 @@ it('finds the 10 nearest venues/locations to a given coordinates', function() {
     searchButton.click();
     var venues = element.all(by.repeater('venue in searchCtrl.searchResult'));
 
-    expect( venues.get(0).element( by.css('.venuename')).getText()  ).toBe('cafe');
+    expect( venues.get(0).element( by.css('.venueName')).getText()  ).toBe('cafe');
   });
 // As a local event seeker,
 // So that I know view what LOCATIONS are on nearest to me clearly

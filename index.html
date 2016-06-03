@@ -9,7 +9,10 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="js/app.js"></script>
     <script src="js/foursquareVenueSearchController.js"></script>
+    <script src="js/dateService.js"></script>
+    <script src="js/searchVenuesFactory.js"></script>
   </head>
+
   <body>
     <h1> Foursquare Venue Search </h1>
     <div  ng-controller="FoursquareSearchController as searchCtrl">
@@ -27,7 +30,7 @@
       <ul class="list-group">
         <li class="list-group-item"
           ng-repeat="venue in searchCtrl.searchResult">
-          <img ng-src="{{venue.image}}">
+          <img class="venueImage" ng-src="{{venue.image}}">
           <a class="venueName" ng-href="{{venue}}">{{venue.name}}</a><br>
           <a class= "venueReview" ng-href="{{venue}}">{{venue.review}}</a><br>
           <a class= "venueHours" ng-href="{{venue}}">{{venue.hours}}</a>
